@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from '../environments/environment'
+import { firebase } from '../environments/environment'
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFireMessagingModule } from '@angular/fire/messaging';
 import { AngularFireStorageModule } from '@angular/fire/storage';
@@ -20,7 +20,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
     BrowserModule,
     AppRoutingModule,
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(firebase),
     AngularFireAuthModule,
     AngularFireMessagingModule,
     AngularFireStorageModule,
